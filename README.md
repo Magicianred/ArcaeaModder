@@ -4,4 +4,4 @@
 ---
 
 修改自 `CHUNITHM Modder`
-(Translated to english by alice.)
+(Translated to english and add something,by alice.)
