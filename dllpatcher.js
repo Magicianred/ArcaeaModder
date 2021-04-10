@@ -64,7 +64,7 @@
             } else if(status === "off") {
                 console.log('"' + this.name + '"', "is disabled!");
             } else {
-                return '"' + this.name + '" 选项不匹配！请检查是否加载了正确文件。';
+                return '"' + this.name + '" The options do not match! Please check if the correct file is loaded.';
             }
         }
     
@@ -273,7 +273,7 @@
                     "type": "file",
                 });
             var label = $("<label>", {"class": "fileLabel", "for": filepickerId});
-            label.html("<strong>加载文件</strong> 或直接拖拽到窗口。");
+            label.html("<strong>Load file</strong> Or directly drag and drop to the window.");
     
             this.fileInput.on("change", function (e) {
                 if (this.files && this.files.length > 0)
