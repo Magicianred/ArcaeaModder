@@ -450,13 +450,13 @@
             this.dllFile = new Uint8Array(buffer);
             if(this.validatePatches()) {
                 this.successDiv.removeClass("hidden");
-                this.successDiv.html("文件加载成功！");
+                this.successDiv.html("The file is loaded successfully!");
             } else {
                 this.successDiv.addClass("hidden");
             }
             // Update save button regardless
             this.saveButton.prop('disabled', false);
-            this.saveButton.text('保存文件');
+            this.saveButton.text('save document');
             this.errorDiv.html(this.errorLog);
         }
     
