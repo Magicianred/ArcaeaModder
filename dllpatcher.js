@@ -394,7 +394,7 @@
             this.patchDiv = $("<div>", {"class": "patches"});
     
             var saveButton = $("<button disabled>");
-            saveButton.text('请先加载文件');
+            saveButton.text('Please load the file first');
             saveButton.on('click', this.saveDll.bind(this));
             this.saveButton = saveButton;
     
@@ -423,7 +423,7 @@
                      "id" : filepickerId,
                      "type" : 'file'});
                 var label = $("<label>", {"class": "fileLabel", "for": filepickerId});
-                label.html('<strong>加载文件</strong> 或直接拖拽到窗口。');
+                label.html('<strong>Upload File</strong> Or directly drag and drop to the window.');
     
                 this.fileInput.on('change', function(e) {
                     if(this.files && this.files.length > 0)
