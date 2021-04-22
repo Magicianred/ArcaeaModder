@@ -1,4 +1,4 @@
-
+			
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,11 +10,13 @@
         <script type="text/javascript" src="./FileSaver.min.js"></script>
         <script type="text/javascript" src="./dllpatcher.js"></script>
         <script type="text/javascript">
+		
+		Note: if you want to activate an option(example : songlist hash check removed) please untick the option
             window.addEventListener("load", function () {
                 new Patcher("armeabi-v7a/libcocos2dcpp.so", "", [
                     {
                         name: "Remove songlist,packlist,unlocks hash check",
-                        tooltip: "Be able to modify songlist, packlist, unlocks when enabled",
+                        tooltip: "Be able to modify songlist, packlist, unlocks when disabled",
                         patches: [
                             {offset: 0x564EDE, off: [0x00, 0xBF], on: [0x90, 0xBB]}, // songlist
                             {offset: 0x564EEE, off: [0x00, 0xBF], on: [0x50, 0xBB]}, // packlist
@@ -92,7 +94,7 @@
                         ]
                     }
                 ]);
-            });
+            });	
         </script>
     </head>
     <body>
